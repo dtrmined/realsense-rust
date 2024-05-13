@@ -18,3 +18,5 @@ pub mod stream_profile;
 pub mod prelude {
     pub use crate::frame::{FrameCategory, FrameEx};
 }
+
+pub extern crate realsense_sys;
