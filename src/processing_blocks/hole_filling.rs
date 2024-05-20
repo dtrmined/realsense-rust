@@ -1,12 +1,12 @@
 //! Processing block hole filling
 
-use anyhow::Result;
-use realsense_rust::{
+use crate::{
     check_rs2_error,
     frame::CompositeFrame,
     processing_blocks::errors::{ProcessFrameError, ProcessingBlockConstructionError},
-    realsense_sys as sys,
 };
+use anyhow::Result;
+use realsense_sys as sys;
 use std::{convert::TryFrom, ptr::NonNull, task::Poll, time::Duration};
 
 /// Processing Block and Frame Queue for hole filling a stream
